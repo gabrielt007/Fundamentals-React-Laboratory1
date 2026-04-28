@@ -1,0 +1,16 @@
+[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K⠹[1G[0K⠸[1G[0K⠼[1G[0K⠴[1G[0K⠦[1G[0K⠧[1G[0K⠇[1G[0K⠏[1G[0K⠋[1G[0K⠙[1G[0K
+up to date, audited 649 packages in 3s
+[1G[0K⠙[1G[0K
+[1G[0K⠙[1G[0K27 packages are looking for funding
+[1G[0K⠙[1G[0K  run `npm fund` for details
+[1G[0K⠙[1G[0K
+[31m[1m64[22m[39m vulnerabilities (1 [1mlow[22m, 19 [33m[1mmoderate[22m[39m, 34 [31m[1mhigh[22m[39m, 10 [35m[1mcritical[22m[39m)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+[1G[0K⠹[1G[0K

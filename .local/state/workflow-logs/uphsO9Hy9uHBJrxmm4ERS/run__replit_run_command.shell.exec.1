@@ -1,0 +1,1618 @@
+
+> react-javascript@1.0.0 dev
+> vite
+
+[1G[0K
+
+[1;1H[0J
+  [32m[1mVITE[22m v5.0.0[39m  [2mready in [0m[1m237[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.31.83.226:[1m5173[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:08:48 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/index.jsx[22m
+[2m6:08:48 PM[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./index.css" from "src/index.jsx". Does the file exist?
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:08:48 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./index.css" from "src/index.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36m/home/runner/workspace/src/index.jsx[39m:4:7
+[33m  3  |  import ReactDOM from "react-dom/client";
+  4  |  import App from "./App";
+  5  |  import "./index.css";
+     |          ^
+  6  |  ReactDOM.createRoot(document.getElementById("root")).render(
+  7  |    /* @__PURE__ */ jsxDEV(React.StrictMode, { children: /* @__PURE__ */ jsxDEV(App, {}, void 0, false, {[39m
+      at formatError (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61701:46)
+      at TransformContext.error (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61695:19)
+      at normalizeUrl (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:59988:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:60138:47
+      at async Promise.all (index 4)
+      at async TransformContext.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:60059:13)
+      at async Object.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61996:30)
+      at async loadAndTransform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:47780:29)
+      at async viteTransformMiddleware (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:57379:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:09:01 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.css[22m
+[2m6:09:01 PM[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to load url /src/App.css (resolved id: /home/runner/workspace/src/App.css) in /home/runner/workspace/src/App.jsx. Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:09:04 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m6:09:09 PM[22m [31m[1m[vite][22m[39m Pre-transform error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:09:09 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"[39m
+  Plugin: [35mvite:css[39m
+  File: [36m/home/runner/workspace/node_modules/tailwindcss/lib/index.js[39m:1:0
+[33m  1  |  "use strict";
+     |  ^
+  2  |  module.exports = require("./plugin");
+  3  |  [39m
+      at Input.error (/home/runner/workspace/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/runner/workspace/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/runner/workspace/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/runner/workspace/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/runner/workspace/node_modules/postcss/lib/parse.js:11:12)
+      at get root [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:43:14)
+      at Result.get [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:76:21)
+      at file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-M-BNPx05.js:874:45
+      at async Promise.all (index 0)
+      at async LazyResult.runAsync (/home/runner/workspace/node_modules/postcss/lib/lazy-result.js:293:11)
+      at async compileCSS (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:38400:25)
+      at async TransformContext.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:37781:56)
+      at async Object.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61996:30)
+      at async loadAndTransform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:47780:29)
+      at async viteTransformMiddleware (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:57379:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:09:35 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/index.jsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:09:43 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/index.jsx[22m [33m(x2)[39m
+[2m6:09:44 PM[22m [31m[1m[vite][22m[39m Pre-transform error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:09:48 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"[39m
+  Plugin: [35mvite:css[39m
+  File: [36m/home/runner/workspace/node_modules/tailwindcss/lib/index.js[39m:1:0
+[33m  1  |  "use strict";
+     |  ^
+  2  |  module.exports = require("./plugin");
+  3  |  [39m
+      at Input.error (/home/runner/workspace/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/runner/workspace/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/runner/workspace/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/runner/workspace/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/runner/workspace/node_modules/postcss/lib/parse.js:11:12)
+      at get root [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:43:14)
+      at Result.get [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:76:21)
+      at file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-M-BNPx05.js:874:45
+      at async Promise.all (index 0)
+      at async LazyResult.runAsync (/home/runner/workspace/node_modules/postcss/lib/lazy-result.js:293:11)
+      at async compileCSS (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:38400:25)
+      at async TransformContext.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:37781:56)
+      at async Object.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61996:30)
+      at async loadAndTransform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:47780:29)
+      at async viteTransformMiddleware (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:57379:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:10:00 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/index.jsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:10:39 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/index.jsx[22m [33m(x2)[39m
+[2m6:10:39 PM[22m [31m[1m[vite][22m[39m Pre-transform error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:10:39 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"[39m
+  Plugin: [35mvite:css[39m
+  File: [36m/home/runner/workspace/node_modules/tailwindcss/lib/index.js[39m:1:0
+[33m  1  |  "use strict";
+     |  ^
+  2  |  module.exports = require("./plugin");
+  3  |  [39m
+      at Input.error (/home/runner/workspace/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/runner/workspace/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/runner/workspace/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/runner/workspace/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/runner/workspace/node_modules/postcss/lib/parse.js:11:12)
+      at get root [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:43:14)
+      at Result.get [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:76:21)
+      at file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-M-BNPx05.js:874:45
+      at async Promise.all (index 0)
+      at async LazyResult.runAsync (/home/runner/workspace/node_modules/postcss/lib/lazy-result.js:293:11)
+      at async compileCSS (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:38400:25)
+      at async TransformContext.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:37781:56)
+      at async Object.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61996:30)
+      at async loadAndTransform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:47780:29)
+      at async viteTransformMiddleware (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:57379:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:11:03 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/index.jsx[22m
+[2m6:11:03 PM[22m [31m[1m[vite][22m[39m Pre-transform error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:11:03 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"[39m
+  Plugin: [35mvite:css[39m
+  File: [36m/home/runner/workspace/node_modules/tailwindcss/lib/index.js[39m:1:0
+[33m  1  |  "use strict";
+     |  ^
+  2  |  module.exports = require("./plugin");
+  3  |  [39m
+      at Input.error (/home/runner/workspace/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/runner/workspace/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/runner/workspace/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/runner/workspace/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/runner/workspace/node_modules/postcss/lib/parse.js:11:12)
+      at get root [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:43:14)
+      at Result.get [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:76:21)
+      at file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-M-BNPx05.js:874:45
+      at async Promise.all (index 0)
+      at async LazyResult.runAsync (/home/runner/workspace/node_modules/postcss/lib/lazy-result.js:293:11)
+      at async compileCSS (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:38400:25)
+      at async TransformContext.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:37781:56)
+      at async Object.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61996:30)
+      at async loadAndTransform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:47780:29)
+      at async viteTransformMiddleware (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:57379:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:11:15 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.css[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:11:15 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/index.css[22m
+[2m6:11:15 PM[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./index.css" from "src/index.jsx". Does the file exist?
+[2m6:11:15 PM[22m [31m[1m[vite][22m[39m Pre-transform error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"
+[2m6:11:15 PM[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./index.css" from "src/index.jsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:11:15 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./index.css" from "src/index.jsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36m/home/runner/workspace/src/index.jsx[39m:4:7
+[33m  3  |  import ReactDOM from "react-dom/client";
+  4  |  import App from "./App";
+  5  |  import "./index.css";
+     |          ^
+  6  |  ReactDOM.createRoot(document.getElementById("root")).render(
+  7  |    /* @__PURE__ */ jsxDEV(React.StrictMode, { children: /* @__PURE__ */ jsxDEV(App, {}, void 0, false, {[39m
+      at formatError (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61701:46)
+      at TransformContext.error (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61695:19)
+      at normalizeUrl (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:59988:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:60138:47
+      at async Promise.all (index 4)
+      at async TransformContext.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:60059:13)
+      at async Object.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61996:30)
+      at async loadAndTransform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:47780:29)
+      at async viteTransformMiddleware (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:57379:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:11:21 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/index.jsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:11:21 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"[39m
+  Plugin: [35mvite:css[39m
+  File: [36m/home/runner/workspace/node_modules/tailwindcss/lib/index.js[39m:1:0
+[33m  1  |  "use strict";
+     |  ^
+  2  |  module.exports = require("./plugin");
+  3  |  [39m
+      at Input.error (/home/runner/workspace/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/runner/workspace/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/runner/workspace/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/runner/workspace/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/runner/workspace/node_modules/postcss/lib/parse.js:11:12)
+      at get root [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:43:14)
+      at Result.get [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:76:21)
+      at file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-M-BNPx05.js:874:45
+      at async Promise.all (index 0)
+      at async LazyResult.runAsync (/home/runner/workspace/node_modules/postcss/lib/lazy-result.js:293:11)
+      at async compileCSS (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:38400:25)
+      at async TransformContext.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:37781:56)
+      at async Object.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61996:30)
+      at async loadAndTransform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:47780:29)
+      at async viteTransformMiddleware (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:57379:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:11:23 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"[39m
+  Plugin: [35mvite:css[39m
+  File: [36m/home/runner/workspace/node_modules/tailwindcss/lib/index.js[39m:1:0
+[33m  1  |  "use strict";
+     |  ^
+  2  |  module.exports = require("./plugin");
+  3  |  [39m
+      at Input.error (/home/runner/workspace/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/runner/workspace/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/runner/workspace/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/runner/workspace/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/runner/workspace/node_modules/postcss/lib/parse.js:11:12)
+      at get root [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:43:14)
+      at Result.get [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:76:21)
+      at file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-M-BNPx05.js:874:45
+      at async Promise.all (index 0)
+      at async LazyResult.runAsync (/home/runner/workspace/node_modules/postcss/lib/lazy-result.js:293:11)
+      at async compileCSS (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:38400:25)
+      at async TransformContext.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:37781:56)
+      at async Object.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61996:30)
+      at async loadAndTransform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:47780:29)
+      at async viteTransformMiddleware (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:57379:32) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:11:45 PM[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2msrc/index.jsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:11:46 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"[39m
+  Plugin: [35mvite:css[39m
+  File: [36m/home/runner/workspace/node_modules/tailwindcss/lib/index.js[39m:1:0
+[33m  1  |  "use strict";
+     |  ^
+  2  |  module.exports = require("./plugin");
+  3  |  [39m
+      at Input.error (/home/runner/workspace/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/runner/workspace/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/runner/workspace/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/runner/workspace/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/runner/workspace/node_modules/postcss/lib/parse.js:11:12)
+      at get root [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:43:14)
+      at Result.get [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:76:21)
+      at file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-M-BNPx05.js:874:45
+      at async Promise.all (index 0)
+      at async LazyResult.runAsync (/home/runner/workspace/node_modules/postcss/lib/lazy-result.js:293:11)
+      at async compileCSS (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:38400:25)
+      at async TransformContext.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:37781:56)
+      at async Object.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61996:30)
+      at async loadAndTransform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:47780:29)
+      at async viteTransformMiddleware (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:57379:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:11:48 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"[39m
+  Plugin: [35mvite:css[39m
+  File: [36m/home/runner/workspace/node_modules/tailwindcss/lib/index.js[39m:1:0
+[33m  1  |  "use strict";
+     |  ^
+  2  |  module.exports = require("./plugin");
+  3  |  [39m
+      at Input.error (/home/runner/workspace/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/runner/workspace/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/runner/workspace/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/runner/workspace/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/runner/workspace/node_modules/postcss/lib/parse.js:11:12)
+      at get root [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:43:14)
+      at Result.get [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:76:21)
+      at file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-M-BNPx05.js:874:45
+      at async Promise.all (index 0)
+      at async LazyResult.runAsync (/home/runner/workspace/node_modules/postcss/lib/lazy-result.js:293:11)
+      at async compileCSS (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:38400:25)
+      at async TransformContext.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:37781:56)
+      at async Object.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61996:30)
+      at async loadAndTransform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:47780:29)
+      at async viteTransformMiddleware (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:57379:32) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:12:02 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"[39m
+  Plugin: [35mvite:css[39m
+  File: [36m/home/runner/workspace/node_modules/tailwindcss/lib/index.js[39m:1:0
+[33m  1  |  "use strict";
+     |  ^
+  2  |  module.exports = require("./plugin");
+  3  |  [39m
+      at Input.error (/home/runner/workspace/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/runner/workspace/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/runner/workspace/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/runner/workspace/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/runner/workspace/node_modules/postcss/lib/parse.js:11:12)
+      at get root [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:43:14)
+      at Result.get [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:76:21)
+      at file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-M-BNPx05.js:874:45
+      at async Promise.all (index 0)
+      at async LazyResult.runAsync (/home/runner/workspace/node_modules/postcss/lib/lazy-result.js:293:11)
+      at async compileCSS (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:38400:25)
+      at async TransformContext.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:37781:56)
+      at async Object.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61996:30)
+      at async loadAndTransform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:47780:29)
+      at async viteTransformMiddleware (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:57379:32) [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:12:19 PM[22m [31m[1m[vite][22m[39m [31mInternal server error: [postcss] postcss-import: /home/runner/workspace/node_modules/tailwindcss/lib/index.js:1:1: Unknown word "use strict"[39m
+  Plugin: [35mvite:css[39m
+  File: [36m/home/runner/workspace/node_modules/tailwindcss/lib/index.js[39m:1:0
+[33m  1  |  "use strict";
+     |  ^
+  2  |  module.exports = require("./plugin");
+  3  |  [39m
+      at Input.error (/home/runner/workspace/node_modules/postcss/lib/input.js:135:16)
+      at Parser.unknownWord (/home/runner/workspace/node_modules/postcss/lib/parser.js:595:22)
+      at Parser.other (/home/runner/workspace/node_modules/postcss/lib/parser.js:437:12)
+      at Parser.parse (/home/runner/workspace/node_modules/postcss/lib/parser.js:472:16)
+      at parse (/home/runner/workspace/node_modules/postcss/lib/parse.js:11:12)
+      at get root [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:43:14)
+      at Result.get [as root] (/home/runner/workspace/node_modules/postcss/lib/no-work-result.js:76:21)
+      at file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-M-BNPx05.js:874:45
+      at async Promise.all (index 0)
+      at async LazyResult.runAsync (/home/runner/workspace/node_modules/postcss/lib/lazy-result.js:293:11)
+      at async compileCSS (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:38400:25)
+      at async TransformContext.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:37781:56)
+      at async Object.transform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:61996:30)
+      at async loadAndTransform (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:47780:29)
+      at async viteTransformMiddleware (file:///home/runner/workspace/node_modules/vite/dist/node/chunks/dep-T98iZFpD.js:57379:32) [33m(x4)[39m
+
+[31mCould not open index.js in the editor.[39m
+[31mThe editor process exited with an error: spawn vi ENOENT.[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:12:58 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.css[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m6:14:10 PM[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
