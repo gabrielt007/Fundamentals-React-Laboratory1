@@ -1,8 +1,8 @@
-import storeGalleta from "../context/storeTecnologia"
+import storeTecnologia from "../context/storeTecnologia"
 
 const Octavo = () => {
 
-  const {detalle} = storeGalleta()
+  const {detalle} = storeTecnologia()
 
   return (
     <>
