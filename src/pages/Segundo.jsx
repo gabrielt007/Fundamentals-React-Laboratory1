@@ -1,47 +1,32 @@
-
-/*
-
-  1- useState
-
-*/
-
-
 import { useState } from "react"
 
 const Segundo = () => {
-
-  const [counter, setCounter] = useState(0)
-
-  const handleReset = () =>
-  {
-    setCounter(0)
-  }
+  // Estado inicial: false (el mensaje está oculto)
+  const [mostrar, setMostrar] = useState(false);
 
   return (
     <>
-      <h1 className="font-bold text-2xl">useState</h1>
-      
-      <hr className="border-gray-400 mb-8"/>
+      <h1 className="font-bold text-2xl">Ejemplo de Uso - Use State</h1>
+      <hr className="border-gray-400 mb-6"/>
 
-      <ul className="list-disc pl-5">
-        <li>
-          Es un Hook que permite manejar el estado dentro de un componente.
-        </li>
-      </ul>
-        
-        <div className="text-center mb-8">
-        
-          <h2 className="mt-4 mb-4">Likes del vídeo: {counter}</h2>
-        
-          <button className="bg-green-700 text-white py-1 px-3 mx-1 rounded" onClick={()=>setCounter(counter + 1)}>Aumentar</button>
-          
-          <button className="bg-red-700 text-white py-1 px-3 mx-1 rounded" onClick={handleReset}>Resetar</button>
-        
-          <button className="bg-blue-700 text-white py-1 px-3 rounded" onClick={()=>{setCounter(counter-1)}}>Disminuir</button>
-        
-        </div>
+      <div className="bg-gray-100 p-6 rounded-lg text-center">
+        {/* El botón cambia el estado al valor contrario de 'mostrar' */}
+        <button 
+          className="bg-blue-600 text-white px-4 py-2 rounded shadow"
+          onClick={() => setMostrar(!mostrar)}
+        >
+          {mostrar ? "Ocultar Mensaje" : "Mostrar Mensaje"}
+        </button>
+
+        {/* Condicional simple: si 'mostrar' es true, enseña el párrafo */}
+        {mostrar && (
+          <p className="mt-4 text-lg font-medium text-green-700">
+            ¡Hola! Este es el mensaje oculto Bv. 
+          </p>
+        )}
+      </div>
     </>
   )
 }
 
-export default Segundo
+export default Segundo;

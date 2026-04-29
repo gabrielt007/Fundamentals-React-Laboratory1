@@ -1,34 +1,26 @@
-
 /*
-
-  1- useEffect
-
+  1- useEffect (Ejemplo: Posts con estructura original)
 */
-
 
 import { useEffect, useState } from "react"
 
 const Tercero = () => {
 
-  const [user, setUser] = useState({})
-  
-  const [buscar, setBuscar] = useState(2)
+  const [post, setPost] = useState({})
+  const [buscar, setBuscar] = useState(0)
 
-  const getUserIDApi = async() =>
+  const getPostApi = async() =>
   {
-    const id = Math.floor(Math.random()*10)+1
-    const request = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`)
+    const id = Math.floor(Math.random() * 100) + 1
+    const request = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
     const response = await request.json()
     console.log(response)
-    setUser(response)
+    setPost(response)
   }
   
-  useEffect(()=>{
-    
-    getUserIDApi()
-  
-  },[buscar])
-
+  useEffect(() => {
+    getPostApi()
+  }, [buscar])
 
   return (
     <>
@@ -42,17 +34,25 @@ const Tercero = () => {
         </li>
       </ul>
 
+      {/* Mantengo los contenedores de posición (flex y centrado) */}
       <div className="flex justify-center mb-8 mt-8">
 
-        <div className="w-120 border rounded-lg p-4 w-80 text-center">
+        {/* Mantengo el recuadro (border, padding y ancho) pero sin colores extra */}
+        <div className="border rounded-lg p-4 w-80 text-center">
 
-          <h2 className="text-lg font-semibold mb-2">Bienvenido(a) - {user.name}</h2>
+          <h2 className="text-lg font-semibold mb-2">Publicación #{post.id}</h2>
 
-          <p className="mb-3 text-left">username: {user.username}</p>
-          <p className="mb-3 text-left">email: {user.email}</p>
-          <p className="mb-3 text-left">phone: {user.phone}</p>
-          <p className="mb-3 text-left">address: {user.address?.country}</p>
-          <p className="mb-3 text-left">location: {user.address?.geolo?.latitude ?? "N/A"}</p>
+          <p className="mb-3 text-left font-bold">Título: {post.title}</p>
+          
+          <p className="mb-3 text-left text-sm">{post.body}</p>
+
+          {/* Único elemento con estilos de color y diseño */}
+          <button 
+            className="bg-blue-600 text-white py-2 px-4 rounded w-full hover:bg-blue-800 transition-colors" 
+            onClick={() => setBuscar(buscar + 1)}
+          >
+            Actualizar Contenido
+          </button>
           
         </div>
 

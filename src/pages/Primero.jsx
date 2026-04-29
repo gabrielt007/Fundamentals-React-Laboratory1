@@ -1,64 +1,58 @@
-/*
-  
-  1- Variable
-  2- Fragment
-  3- JSX
-  4- Condicional
-  5.- Eventos
-  
-*/
-
-
-const Primero = () => {
-
-  const user = {
-    name: "Byron",
-    rol: "Admin",
-  }
+const Producto = () => {
+  // 1. Variable: Objeto para almacenar información (como en tu ejemplo)
+  const item = {
+    nombre: "Laptop Pro 14",
+    precio: 1200,
+    stock: 1, // Usaremos esto para el condicional
+  };
 
   return (
+    // 2. Fragment: Agrupamos todo sin crear nodos extra
     <>
-      <h1 className="font-bold text-2xl">React</h1>
+      <h1 className="font-bold text-2xl text-blue-600">React ejemplo de uso Nro 1</h1>
       
-      <hr className="border-gray-400 mb-8"/>
+      <hr className="border-blue-200 mb-8"/>
       
-      <ul className="list-disc pl-5">
+      {/* 3. JSX: Lista de conceptos aplicados en este bloque */}
+      <ul className="list-decimal pl-5 mb-6 text-gray-700">
         <li>
-          <strong>Variable:</strong>Sirve para almacenar información que luego se puede usar en un componente.
+          <strong>Props/Data:</strong> Los datos fluyen desde objetos de JavaScript.
         </li>
         <li>
-          <strong>Fragment:</strong> Permite agrupar varios elementos sin añadir un div extra al HTML.
+          <strong>Operador Ternario:</strong> Ideal para cambiar etiquetas o colores según el estado.
         </li>
         <li>
-          <strong>JSX:</strong> Sintaxis que combina HTML y JavaScript dentro de React.
-        </li>
-        <li>
-          <strong>Condicional:</strong> Mostrar contenido dependiendo de una condición.
-        </li>
-        <li>
-          <strong>Eventos:</strong> Permiten que la aplicación responda a las acciones del usuario (onClick, onChange, etc.).
+          <strong>Tailwind:</strong> Estilizado rápido mediante clases de utilidad.
         </li>
       </ul>
 
+      {/* Contenedor tipo Card */}
+      <div className="flex justify-center mt-10">
         
-
-        
-      <div className="flex justify-center mb-8 mt-8">
-        
-        <div className="w-120 border rounded-lg p-4 w-80 text-center">
+        <div className="border-2 border-indigo-100 rounded-xl p-6 w-72 shadow-lg">
           
-          <h2 className="text-lg font-semibold mb-2">Bienvenido(a) - {user.name}</h2>
+          <h2 className="text-xl font-bold mb-1">{item.nombre}</h2>
           
-          <p className="mb-3">{user.rol === "Admin" ? "Administrador" :"Invitado"}</p>
+          <p className="text-gray-500 mb-4 font-mono">${item.precio}</p>
           
-          <button className="bg-red-700 text-white py-1 px-3 rounded w-full" onClick={()=>{alert("cierre de sesion")}}>Salir</button>
+          {/* 4. Condicional: Si el stock es mayor a 0 muestra "Disponible", si no "Agotado" */}
+          <div className={`mb-4 py-1 text-sm font-medium rounded ${item.stock > 0 ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}>
+            {item.stock > 0 ? "En Stock" : "Agotado"}
+          </div>
+          
+          {/* 5. Evento: Función anónima en el onClick */}
+          <button 
+            className="bg-indigo-600 hover:bg-indigo-800 text-white font-semibold py-2 px-4 rounded-lg w-full transition-colors"
+            onClick={() => { alert(`Añadido: ${item.nombre}`) }}
+          >
+            Comprar ahora
+          </button>
         
         </div>
       
       </div>
-    
     </>
   )
 }
 
-export default Primero
+export default Producto;
